@@ -10,7 +10,9 @@
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch",
     "build:prod": "gulp build && webpack --config webpack.config.prod.js --progress",
-    "start:prod": "cross-env NODE_ENV=production node server.prod.js"
+    "start:prod": "pm2 start ecosystem.config.js --only admin --env production",
+    "stop:prod": "pm2 stop ecosystem.config.js --only admin --env production",
+    "restart:prod": "pm2 restart ecosystem.config.js --only admin --env production"
   },
   "author": "",
   "license": "ISC",
