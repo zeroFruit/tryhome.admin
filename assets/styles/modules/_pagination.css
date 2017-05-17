@@ -1,0 +1,27 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.pagination {
+  display: inline-block;
+  width: 100%;
+  margin-left: 350px;
+
+  li {
+    cursor: pointer;
+    font-weight: 400;
+    padding: 8px 16px;
+    list-style-type: none;
+    color: black;
+    float: left;
+  }
+
+  li:hover {
+    background-color: #ddd;
+  }
+
+  &__active {
+    background-color: #ddd;
+  }
+}

@@ -1,0 +1,15 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.categories {
+  margin-left: 100px;
+  font-weight: 300;
+  font-size: 1.1rem;
+
+  &__single {
+    padding-right: 30px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,31 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.section-title {
+  font-size: 2.55rem;
+  font-weight: 300;
+  text-align: center;
+
+  @mixin atSmall {
+    font-size: 3.75rem;
+  }
+
+  strong {
+    font-weight: 500;
+  }
+
+  &--less-margin {
+    margin-bottom: 1.3rem;
+    margin-top: 0;
+  }
+
+  &--b-padding {
+    padding-bottom: 1rem
+  }
+
+  &--small {
+    font-size: 3rem;
+  }
+}

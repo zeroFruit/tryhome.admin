@@ -1,0 +1,39 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.feature-item {
+  position: relative;
+  padding-bottom: 1rem;
+
+
+
+  @mixin atSmall {
+    padding-left: 94px;
+  }
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: .8rem;
+    margin-top: .7em;
+    text-align: center;
+
+    @mixin atSmall {
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin-bottom: .3rem;
+      margin-top: .5em;
+      text-align: left;
+
+      &--b-padding {
+        padding-bottom: 3rem;
+      }
+
+      &--pointer {
+        cursor: pointer;
+      }
+    }
+  }
+}

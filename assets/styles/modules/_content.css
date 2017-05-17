@@ -1,0 +1,89 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.content {
+  position: relative;
+  padding-bottom: 3rem;
+
+  @mixin atSmall {
+    padding-left: 94px;
+  }
+
+  &__label {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: .8rem;
+    margin-top: .7em;
+    text-align: center;
+
+    @mixin atSmall {
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin-bottom: .3rem;
+      margin-top: .5em;
+      text-align: left;
+
+      &--b-padding {
+        padding-bottom: 2rem;
+      }
+
+      &--pointer {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__text {
+    @mixin atSmall {
+      font-size: 1.1rem;
+      font-weight: 300;
+      margin-bottom: .3rem;
+      margin-top: .5em;
+      text-align: left;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: gray;
+
+    @mixin atSmall {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: .3rem;
+      margin-top: .5em;
+      text-align: left;
+    }
+  }
+
+  &__item {
+    @mixin atSmall {
+      font-size: 1rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    &--head {
+      font-weight: 700;
+    }
+
+    &--link {
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+  }
+
+  &--l-margin {
+    margin-left: 30px;
+  }
+
+  &--b-more-padding {
+    padding-bottom: 5rem;
+  }
+}

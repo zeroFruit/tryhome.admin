@@ -1,0 +1,24 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.order-list {
+  padding-bottom: 2rem;
+  &__order-id {
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  &__order-date {
+    font-weight: 300;
+    font-size: .75rem;
+  }
+
+  &__customer-info {
+    font-weight: 300;
+    font-size: 1rem;
+    margin-left: .5rem;
+  }
+}

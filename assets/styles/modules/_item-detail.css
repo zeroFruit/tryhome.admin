@@ -1,0 +1,50 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.item-detail {
+  position: relative;
+  padding-bottom: 3rem;
+
+  @mixin atSmall {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  &__wrapper {
+    margin-bottom: 1rem;
+    margin-left: 100px;
+  }
+  &__image {
+    max-width: 100%;
+  }
+  &__label {
+
+  }
+
+  &__text {
+
+  }
+
+  &__link {
+    cursor: pointer;
+    text-decoration: none;
+    
+    @mixin atSmall {
+      font-size: 1.1rem;
+      font-weight: 300;
+      margin-bottom: .3rem;
+      margin-top: .5em;
+      text-align: left;
+    }
+  }
+
+  &--l-margin {
+    margin-left: 30px;
+  }
+
+  &--cursor-pointer {
+    cursor: pointer;
+  }
+}

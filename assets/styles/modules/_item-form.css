@@ -1,0 +1,39 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.item-form {
+  padding-left: 100px;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  &--more-l-padding {
+    padding-left: 180px;
+  }
+
+  &__input {
+    height: 1.8rem;
+    width: 400px;
+  }
+
+  &__select {
+    height: 1.8rem;
+    width: 400px;
+  }
+
+  &__caution {
+    margin-top: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: gray;
+  }
+
+  &__error {
+    margin-top: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: red;
+  }
+}

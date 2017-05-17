@@ -1,0 +1,25 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.dropzone {
+  padding: 1rem 1rem;
+  width: 400px;
+  height: 250px;
+  border: .2px solid gray;
+
+  &__placeholder {
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  &__caution {
+    color: red;
+    font-weight: 600;
+  }
+
+  &__uploaded {
+    font-weight: 600;
+  }
+}

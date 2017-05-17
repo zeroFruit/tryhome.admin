@@ -1,0 +1,25 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.btn {
+  cursor: pointer;
+
+  &__submit {
+    padding: .25rem 2rem;
+    margin-left: 500px;
+    margin-right: 500px;
+    background-color: $mainBlue;
+    color: #FFF;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &--t-margin {
+    margin-top: 2rem;
+  }
+}
